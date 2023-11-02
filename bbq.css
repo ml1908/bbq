@@ -1,0 +1,154 @@
+﻿
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    margin: 0;
+    min-height: 100%;
+    
+    flex-flow: row wrap;
+    text-align: center;
+}
+div {
+    display: block;
+}
+
+.item{
+    /*background-color: #BBCC3B;*/
+    height: 120px;
+
+
+}
+
+.ueber{
+    flex: 1;
+    background-image: url("./Bilder/Smoker-Seminar.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-align: left;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    height: 100px;
+
+}
+
+.item1{
+    flex: 1;
+    height: 100px;
+    
+
+}
+
+.item2{
+    flex: 1;
+    height: 100px;
+}
+
+.item3{
+    flex: 1;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    height: 100px;
+}
+h1{
+    font-family: "sans-serif";
+    text-align: center;
+}
+
+article{
+    padding: 0.2rem 10rem;
+    
+}
+
+.button{
+    font: 100%/1.5 sans-serif;
+
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.4rem 0.8rem;
+    color: #fff;
+    background-color: #BBCC3B;
+    text-decoration: none;
+
+}
+
+
+
+.allgemein{
+    display: flex;
+    justify-content: center;
+
+    flex: 0 1 auto;
+}
+
+
+
+.item4{
+    display: flex;
+   
+}
+
+
+.rechtliches {
+    display: flex;
+    
+    
+}
+.rechtliches .item4 {
+    list-style: none;
+    
+}
+
+.uebersicht{
+    display: flex;
+
+}
+.willkommen {
+    display: flex;
+    flex: 4;
+    
+
+}
+li {
+    list-style: none
+    
+}
+.nebenwort {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex: 1;
+    padding: 0 5px 0 30px;
+    margin: 16px 0 0 130px;
+    border: black 0.0rem solid;
+    border-radius: 25px;
+    box-shadow: 4px 4px 2px #BBCC3B;
+}
+#menu__toggle {
+    opacity: 0;
+}
+@media screen and ( max-width: 580px) and (min-width: 421px) {
+   
+    .container { 
+        width: 100%; flex: 1;
+        flex-direction: column;
+    }
+    .button{
+        min-width: 250px;
+        border-radius: 0px;
+        
+    }
+    article {
+        padding: 0.2rem 0.1rem;
+    }
+    .nebenwort {
+        
+    }
+    
+}
+
+
+
+
