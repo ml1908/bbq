@@ -1,0 +1,133 @@
+﻿.container {
+    display: grid;
+    /*grid-template-rows: auto;
+    grid-template-columns: auto 250px 250px 250px;*/
+    border: #2a9d8f 3px solid;
+    min-height: 100vh;
+    grid-template-areas: 
+            "header header header header"
+            "main main . aside"
+            "footer footer footer footer";
+
+}
+
+h1 {
+    text-align: center;
+}
+
+.willkommen {
+
+}
+
+.item {
+    border: #e9c46a 2px solid;
+}
+
+.btnheader {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.item1 {
+    grid-area: header;
+    background-image: url("./Bilder/Smoker-Startseite.jpg");
+    color: white;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+}
+
+.item2 {
+    grid-area: header;
+    background-color: #e85d04;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+
+
+}
+
+.item3 {
+    grid-area: header;
+    background-color: #f48c06;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+
+}
+
+.item4 {
+    grid-area: header;
+    background-color: #faa307;
+    grid-column: 4 / 5;
+    
+    grid-row-start: 1;
+    grid-row-end: span 1;
+}
+
+.item5 {
+    grid-area: main;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+}
+
+.item11 {
+    grid-area: aside;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+    align-self: center;
+}
+
+.item12 {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.item13 {
+    grid-area: footer;
+    grid-column-start: 2;
+    grid-column-end: span 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.item22 {
+
+
+}
+
+.item23 {
+
+}
+
+
+ul {
+    padding: 0px;
+}
+
+li {
+    list-style: none;
+    border: #f4a261 2px solid;
+}
