@@ -1,7 +1,7 @@
 ﻿.container {
     display: grid;
-    /*grid-template-rows: auto;
-    grid-template-columns: auto 250px 250px 250px;*/
+    /*grid-template-rows: auto;*/
+    /*grid-template-columns: auto 450px 250px 250px;*/
     border: #2a9d8f 3px solid;
     min-height: 100vh;
     grid-template-areas: 
@@ -10,9 +10,26 @@
             "footer footer footer footer";
 
 }
-
+.header{
+    grid-template-columns: auto auto auto auto;
+}
 h1 {
     text-align: center;
+}
+nav{
+    grid-area: header;
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-auto-flow: row;
+    align-content: center;
+    
+}
+.ulnav{
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .willkommen {
@@ -24,11 +41,13 @@ h1 {
 }
 
 .btnheader {
-    display: flex;
-    color: white;
-    justify-content: center;
-    align-items: center;
+    
 }
+    
+    
+    
+    
+
 
 .item1 {
     grid-area: header;
@@ -45,10 +64,10 @@ h1 {
 .item2 {
     grid-area: header;
     background-color: #e85d04;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: span 1;
+    
+    
+    
+    
 
 
 }
@@ -56,20 +75,14 @@ h1 {
 .item3 {
     grid-area: header;
     background-color: #f48c06;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: span 1;
+    
 
 }
 
 .item4 {
     grid-area: header;
     background-color: #faa307;
-    grid-column: 4 / 5;
     
-    grid-row-start: 1;
-    grid-row-end: span 1;
 }
 
 .item5 {
@@ -99,7 +112,9 @@ h1 {
     grid-row-start: 4;
     grid-row-end: 5;
 }
-
+footer{
+    display: grid;
+}
 .item13 {
     grid-area: footer;
     grid-column-start: 2;
@@ -125,6 +140,7 @@ h1 {
 
 ul {
     padding: 0px;
+    
 }
 
 li {

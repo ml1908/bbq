@@ -1,0 +1,46 @@
+﻿@media (max-width: 480px) {
+    .container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 200px auto auto auto auto auto auto auto;
+        grid-template-areas: 
+        "header"
+        "id2"
+        "id3"
+        "id4"
+        "id5"
+        "id6"
+        "id7"
+        "id8"
+
+    ;
+
+
+    }
+
+    header {
+        grid-area: header;
+    }
+    #id2 {
+        grid-area: id2;
+    }
+    #id3 {
+        grid-area: id3;
+    }
+    #id4 {
+        grid-area: id4;
+    }
+    #id5 {
+        grid-area: id5;
+    }
+    #id6{
+        grid-area: id6;
+    }
+    #id7{
+        grid-area: id7;
+    }
+    #id8{
+        grid-area: id8;
+    }
+
+}
