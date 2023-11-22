@@ -27,6 +27,9 @@ nav{
     align-content: center;
     
 }
+p {
+    
+}
 .ulnav{
     display: flex;
     justify-content: space-evenly;
